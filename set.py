@@ -1,62 +1,33 @@
-citiz= {"alvfti","astana", "aktay", "alatau" ,"povladar"}
-# print(len(citiz))
-citiz.add("tokyo")
-print(len(citiz))
+ #1
+age = int(input("жасынызды енгызыныз "))
 
-new_city =input("America")
-citiz.add("new_siti")
-print(citiz)
-
-new_city=input("Enter a city:")
-
-if new_city in citiz:
-    citiz.remove(new_city)
-    print(f"{new_city} was removed from the set")
-else: 
-    print("No such city")
-
-it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-print(len(it_companies))
-
-it_companies.add("Twitter")
-print(it_companies)
- 
-it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-companies ={"avon","gugshy","raf","addidas"}
-it_companies.update(companies)
-
-
-#2 тапсырманын 1ыншысы
-A = {1, 2, 3}
-B = {3, 4, 5}
-union = A.union(B)
-print(union)
+if age >= 18:
+     print("You are old enough to drive.")
+else:
+       years_left = 18 - age
+print("You need to wait for", years_left, "more years to drive.")
 #2
-A = {1, 2, 3}
-B = {3, 4, 5}
-nam = A.nam(B)
-print(nam) 
+?
 #3
-A = {1, 2}
-B = {1, 2, 3, 4, 5}
-set = A.set(B)
-print(set)
+a = int(input("сан енгызыныз: "))
+b = int(input("сан енгызыныз: "))
+
+if a > b:
+    print("a дан улкен b")
+elif a < b:
+    print("a дан кишкентай b")
+else:
+    print("a тен b")
 #4
-A = {1, 2}
-B = {3, 4}
-dis = A.dis(B)
-print(dis)
+?
 #5
-A = {1, 2, 3}
-B = {3, 4, 5}
-join = A + B
-print(join)
-#6
-#7
-#3тапсырма 1
-age_list = [21, 39, 21, 38, 30]
-set = set(age_list)
-print(len(age_list)) 
-print(len(set))   
-#2
-#3
+fruits = ["яблоко", "банан", "апельсин", "груша"]
+
+fruit = input("Введите название фрукта: ")
+
+if fruit not in fruits:
+   fruits.append(fruit)
+print(fruits)
+    else:
+print("Этот фрукт уже существует в списке")
+
